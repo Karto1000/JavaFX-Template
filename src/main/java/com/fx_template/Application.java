@@ -2,6 +2,7 @@ package com.fx_template;
 
 import com.fx_template.data.Datasource;
 import com.fx_template.data.MemoryDatasource;
+import com.fx_template.utils.StageBuilder;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -17,12 +18,14 @@ public class Application extends javafx.application.Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("login.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
+        stage.getIcons().add(StageBuilder.icon);
         stage.setTitle("Login");
         stage.show();
 
         // WITHOUT LOGIN
 //        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("main.fxml"));
 //        Scene scene = new Scene(fxmlLoader.load());
+//        stage.getIcons().add(StageBuilder.icon);
 //        stage.setScene(scene);
 //        stage.show();
 
