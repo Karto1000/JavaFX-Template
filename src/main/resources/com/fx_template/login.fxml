@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="100.0" maxWidth="200.0" prefHeight="100.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fx_template.controller.LoginController">
+   <children>
+      <FlowPane layoutX="24.0" layoutY="28.0" orientation="VERTICAL" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <FlowPane orientation="VERTICAL" prefWrapLength="50.0">
+               <children>
+                  <Label text="Username" />
+                  <TextField fx:id="usernameInput" />
+               </children>
+            </FlowPane>
+            <FlowPane orientation="VERTICAL" prefWrapLength="50.0">
+               <children>
+                  <Label text="Password" />
+                  <PasswordField fx:id="passwordInput" />
+               </children>
+            </FlowPane>
+         </children>
+      </FlowPane>
+      <Button fx:id="loginButton" layoutX="201.0" layoutY="43.0" mnemonicParsing="false" text="Login" />
+   </children>
+   <padding>
+      <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+   </padding>
+</AnchorPane>

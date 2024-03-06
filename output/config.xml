@@ -1,0 +1,23 @@
+<launch4jConfig>
+    <dontWrapJar>false</dontWrapJar>
+    <headerType>gui</headerType>
+    <jar>..\shade\demo_two.jar</jar>
+    <outfile>executable\app.exe</outfile>
+    <errTitle/>
+    <cmdLine/>
+    <chdir>.</chdir>
+    <priority>normal</priority>
+    <downloadUrl/>
+    <supportUrl/>
+    <stayAlive>false</stayAlive>
+    <restartOnCrash>false</restartOnCrash>
+    <manifest/>
+    <icon/>
+    <jre>
+        <path>%JAVA_HOME%;%PATH%</path>
+        <requiresJdk>false</requiresJdk>
+        <requires64Bit>false</requires64Bit>
+        <minVersion/>
+        <maxVersion/>
+    </jre>
+</launch4jConfig>
