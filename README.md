@@ -1,6 +1,7 @@
-# Setup
+# Setup1
 
-1. Change database Name, username and password in hibernate.cfg.xml
+1. Rename FX-Template folder
+2. Change database Name, username and password in hibernate.cfg.xml
 
 ## What to do if Application crashes
 
