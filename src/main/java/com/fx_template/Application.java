@@ -2,6 +2,7 @@ package com.fx_template;
 
 import com.fx_template.data.Datasource;
 import com.fx_template.data.MemoryDatasource;
+import com.fx_template.data.SQLDataSource;
 import com.fx_template.utils.StageBuilder;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,7 +11,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class Application extends javafx.application.Application {
-    public static final Datasource datasource = new MemoryDatasource();
+    public static final Datasource datasource = new SQLDataSource();
 
     @Override
     public void start(Stage stage) throws IOException {
