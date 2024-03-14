@@ -34,6 +34,11 @@ public class SQLDataSource implements Datasource {
 
         sqlModelRepository = new SqlModelRepository(this);
         sqlUserRepository = new SqlUserRepository(this);
+
+        // Create admin user
+        if (!sqlUserRepository.login("admin", "admin")) {
+            sqlUserRepository.register("admin", "admin");
+        }
     }
 
     @Override

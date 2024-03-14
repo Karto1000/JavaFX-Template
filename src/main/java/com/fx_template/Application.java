@@ -3,6 +3,7 @@ package com.fx_template;
 import com.fx_template.data.Datasource;
 import com.fx_template.data.MemoryDatasource;
 import com.fx_template.data.SQLDataSource;
+import com.fx_template.models.User;
 import com.fx_template.utils.StageBuilder;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -12,6 +13,7 @@ import java.io.IOException;
 
 public class Application extends javafx.application.Application {
     public static final Datasource datasource = new SQLDataSource();
+    public static User loggedInUser;
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -24,6 +26,7 @@ public class Application extends javafx.application.Application {
         stage.show();
 
         // WITHOUT LOGIN
+//        loggedInUser = datasource.users().get("admin");
 //        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("main.fxml"));
 //        Scene scene = new Scene(fxmlLoader.load());
 //        stage.getIcons().add(StageBuilder.icon);

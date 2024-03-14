@@ -107,4 +107,10 @@ public class SqlUserRepository implements UserRepository {
 
         return user;
     }
+
+    @Override
+    public User get(String username) {
+        Session session = sqlDataSource.getSession();
+        return session.bySimpleNaturalId(User.class).load(username);
+    }
 }

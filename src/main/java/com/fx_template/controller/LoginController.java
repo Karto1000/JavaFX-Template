@@ -32,6 +32,8 @@ public class LoginController implements Initializable {
             if (datasource.users().login(usernameInput.getText(), passwordInput.getText())) {
                 ((Stage) loginButton.getScene().getWindow()).close();
 
+                Application.loggedInUser = datasource.users().get(usernameInput.getText());
+
                 Stage mainStage = StageBuilder.getStage("Main");
                 FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("main.fxml"));
 

@@ -12,4 +12,9 @@ public class MemoryUserRepository implements UserRepository {
     public User register(String username, String password) {
         return null;
     }
+
+    @Override
+    public User get(String username) {
+        return null;
+    }
 }

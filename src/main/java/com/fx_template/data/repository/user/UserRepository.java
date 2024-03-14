@@ -6,4 +6,6 @@ public interface UserRepository {
     boolean login(String username, String password);
 
     User register(String username, String password);
+
+    User get(String username);
 }
